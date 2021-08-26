@@ -1,0 +1,132 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital@1&family=Atkinson+Hyperlegible:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+html{
+  padding:0;
+  margin:0;
+}
+body{
+  padding:0;
+  margin:0;
+
+}
+header{
+  background-color: #0A0909;
+  width:100%;
+  position:fixed;
+  height:65px;
+  z-index: 1000;
+}
+#title{
+  text-align: center;
+  color:#F5F0EF;
+  line-height: 65px;
+  font-size: 40px;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  left:40vw;
+  margin-top:0px;
+  margin-bottom:0px;
+  height:65px;
+  position:relative;
+  width:20vw;
+  display:inline-block;
+
+}
+#frontage{
+  font-size:0px;
+  /*overflow-y: scroll;*/
+  max-height:100vh;
+  width:100%;
+  z-index: 10;
+}
+#frontage img{
+  margin:0px;
+  padding:0px;
+  max-height:100vh;
+  width:100%;
+  margin-bottom:0;
+  background-color:black;
+}
+.imgcontainer{
+  position:relative;
+  max-height:100vh;
+}
+.imgcontainer img{
+  margin-bottom:-10px;
+}
+#welcome{
+  font-family:'Aleo',serif;
+  font-size: 20px;
+  color:black;
+  position:absolute;
+  top:10vh;
+  text-align:center;
+  width:80%;
+  margin-left:10%;
+}
+#c2a{
+  position:relative;
+  color:black;
+  tranform: top ease 5s;
+  tranform: left ease 5s;
+}
+#c2a:hover{
+  top:1.5px;
+  left:1.5px;
+}
+.caption{
+  font-family: 'Roboto Condensed', serif;
+  font-size:15px;
+  position:absolute;
+  width:100%;
+  text-align:right;
+  color:white;
+  z-index:10;
+  bottom:8px;
+  right:12px;
+}
+#menu{
+  display:inline-block;
+}
+#menubtn{
+  max-width:45px;
+  position:relative;
+  display:inline-block;
+  left:20px;
+}
+
+#dropdown:hover{
+  display:block;
+}
+#dropdown{
+  top:65px;
+  margin-top:-10px;
+  position:fixed;
+  left:-300px;
+  transition: left 2s;
+  font-size:20px;
+  z-index:100;
+  padding:20px;
+  background: #F5F0EF;
+}
+.menu-item{
+  display:block;
+  padding:7.5px;
+  height:33.3%;
+}
+
+.menu-item a{
+  text-decoration-style:none;
+  color:black;
+  display: block;
+  margin-top:5px;
+  padding-left:12.5px;
+  font-family:'Oswald';
+}
+.menu-item img{
+  max-width:150px;
+  height:auto;
+  overflow
+}

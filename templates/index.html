@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% block head %}
+    {{ super() }}
+    <title>UTooPolitics</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    {% endblock %}
+  </head>
+  <body>
+    {% block body %}
+    <div id="frontage">
+      <div class="imgcontainer">
+        <img src="static/img/frontage1.jpg" alt="civic action" id="frontimg1">
+        <p class="caption">Caption: Hong Kong protestors in front of the US consulate 2019</p>
+
+      </div>
+      <div class="imgcontainer">
+        <img src="static/img/jan25.jpeg" alt="civic action" id="frontimg2">
+        <p id="welcome" data-aos="fade-up" data-aos-duration="1500">
+           I am Ali Kamel and I am 16 year old programmer and student from the UK. I set up this site
+           because I wanted to truly give a voice to everybody. The goal for this venture is to gain a
+           significant but widely varied following and simultaneously allow anyone to upload political
+           posts to the account so that anyone can express their views honestly and powerfully. It's
+           time that social media's true democratic power is realised; It's time that we speak out and take
+           the reigns on our world. <br>Don't fade into the background of history, do something <a id="c2a" href="#">Now</a>
+        </p>
+        <p class="caption">Caption: A protestor facing the egyptian police January 2011</p>
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

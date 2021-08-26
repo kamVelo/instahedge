@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/master.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+      function show() {
+        var dd = document.getElementById("dropdown");
+        dd.style.left = "0";
+      }
+      function hide() {
+        var dd = document.getElementById("dropdown");
+        dd.style.left = "-300px";
+      }
+    </script>
+    {% endblock %}
+  </head>
+  <body>
+    <header>
+        <img src="static/img/menubtn.png" alt="menu button" id="menubtn" onmouseover="show()" >
+        <h1 id="title">UTooPolitics</h1>
+    </header>
+    <ul id="dropdown" onmouseover="show()" onmouseout="hide()">
+      <li class="menu-item">
+        <img src="/static/img/aboutus.jpg" alt="">
+        <a href="#">About Us</a>
+      </li>
+      <li class="menu-item">
+        <img src="/static/img/postbox.jpeg" alt="">
+        <a href="#">Post</a>
+      </li>
+      <li class="menu-item">
+        <img src="/static/img/contactus.jpeg" alt="">
+        <a href="#">Contact Us</a>
+      </li>
+    </ul>
+    {% block body %}
+    {% endblock %}
+    <script type="text/javascript" >
+      AOS.init();
+      window.addEventListener('load', AOS.refresh);
+    </script>
+  </body>
+</html>
